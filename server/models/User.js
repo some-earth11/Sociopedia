@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+mongoose.set("strictQuery", false);
 
 const UserSchema = new mongoose.Schema(
     {
@@ -42,3 +43,5 @@ const UserSchema = new mongoose.Schema(
 );
 
 const User = mongoose.model("User", UserSchema);
+
+export default User;

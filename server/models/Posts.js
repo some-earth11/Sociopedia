@@ -1,4 +1,5 @@
 import mongoose, { modelNames } from "mongoose";
+mongoose.set("strictQuery", false);
 
 const PostSchema = mongoose.Schema(
     {
